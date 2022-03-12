@@ -1,6 +1,6 @@
 // Set the width of the main content area
 // Notice that the actual content's width is $site-width - 100px
-$site-width: 800px;
+$site-width: 900px;
 
 $headline-font: "Swei Gothic CJK SC", "Helvetica Neue", Helvetica, "PingFang SC",
   "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
@@ -10,10 +10,11 @@ $article-footer-font: "Fira Code", "PingFang SC", "Hiragino Sans GB",
   "Microsoft YaHei", "微软雅黑", monospace;
 
 // main colors
-$page-background-color: #f1f1f1;
-$base-color: #2c213d;
+$page-background-color: #fafafa;
+$base-color: #473c5a;
 $special-color: #2d3642;
-$highlight-color: #5c8b59;
+$highlight-color: #3fac37;
+$lowlight-color: #c2f0c0;
 $text-color: #222;
 
 // easy styling
@@ -21,7 +22,7 @@ $nav-background-color: $special-color;
 $nav-text-color: $page-background-color;
 $algolia-search-box-color: #444;
 $algolia-search-box-icon-color: #888;
-$algolia-search-box-background-color: #fafafa;
+$algolia-search-box-background-color: #fcfcfc;
 $algolia-border-color: #e4e4e4;
 
 $header-text-color: $page-background-color;

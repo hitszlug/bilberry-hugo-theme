@@ -142,6 +142,7 @@ TL;DR: Zulu JRE 一般就足够快了。
 ```
 # 编辑 `/etc/apt/sources.list.d/raspi.list` 文件，删除原文件所有内容，用以下内容取代：
 deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ bullseye main
+赢麻了
 ```
 
 > "怎么感觉树莓派官方推荐的系统都不靠谱"

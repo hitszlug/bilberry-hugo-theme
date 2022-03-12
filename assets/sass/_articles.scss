@@ -210,10 +210,10 @@ article {
     }
 
     blockquote {
-      background-color: #f6f6f6;
+      background-color: $page-background-color;
       margin: 1.5em 0;
       padding: 1.4em;
-      border-left: 0.5em solid #ededed;
+      border-left: 0.5em solid $lowlight-color;
 
       cite {
         text-transform: uppercase;

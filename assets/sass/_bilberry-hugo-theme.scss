@@ -36,10 +36,11 @@
     position: relative;
 
     code {
-      padding: 1em;
+      padding: 1.6em;
       font-size: 0.9em;
       white-space: pre;
       overflow-x: auto;
+      border-radius: 0.8em;
     }
 
     .copy-button {
