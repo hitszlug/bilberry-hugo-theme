@@ -1,39 +1,26 @@
 footer {
-  border-top: 3px solid $footer-border-color;
-  border-bottom: 3px solid $footer-border-color;
   background-color: $footer-background-color;
 
   .container {
-    padding: 4rem 0;
     display: flex;
     justify-content: space-between;
-    font-size: 0.9em;
+    padding: 3em 2em 2em 2em;
+    font-size: 14px;
     font-family: $headline-font;
-
-    div {
-      &:not(:first-child) {
-        margin-left: 5%;
-      }
-    }
 
     &:after {
       display: none;
     }
 
-    strong {
+    .title {
       text-transform: uppercase;
       color: $footer-headline-color;
-      padding-bottom: 0.75em;
+      font-size: 15px;
     }
 
     ul {
       list-style: none;
-      margin-top: 1.25em;
-
-      li {
-        border-bottom: 1px solid #eee;
-        padding-right: 10px;
-      }
+      margin-top: 17px;
 
       a {
         position: relative;
@@ -54,19 +41,18 @@ footer {
       .external-profiles {
         width: 100%;
         margin-bottom: 2em;
+        .icons {
+          margin-top: 9px;
+          margin-left: -0.3em;
+          a {
+            font-size: 2em;
+            margin: 0 0.3em;
+            color: $base-color;
 
-        a {
-          font-size: 2em;
-          margin: 0 1rem;
-          color: $base-color;
-
-          &:hover {
-            color: $highlight-color;
+            &:hover {
+              color: $highlight-color;
+            }
           }
-        }
-
-        a:nth-child(2) {
-          margin: 0 1rem 0 0;
         }
 
         // Workaround to avoid conflicts with Adblock
