@@ -153,8 +153,8 @@ disqusShortname = ""
     copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
     copyrightYearOverride = "2017"
     copyrightUrl = "https://github.com/Lednerb"
-    creditsText = "Bilberry Hugo Theme"
-    creditsUrl = "https://github.com/Lednerb/bilberry-hugo-theme"
+    creditsText = "Modified Bilberry Hugo Theme"
+    creditsUrl = "https://github.com/hitszlug/bilberry-hugo-theme"
 
 
 # customize your available languages for your multi-lingual site
