@@ -57,6 +57,7 @@ article {
     h1 {
       font-size: 1.75em;
       margin-bottom: 0.25em;
+      font-weight: 500;
 
       a {
         font-style: normal;
@@ -76,6 +77,12 @@ article {
     h6 {
       margin-top: 3.4rem;
       margin-bottom: 2rem;
+    }
+
+    h2,
+    h3 {
+      border-bottom: 1px solid $meta-border-color;
+      padding-bottom: 1rem;
     }
 
     h2 {
