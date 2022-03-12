@@ -38,6 +38,18 @@ article {
   .content {
     padding: 2em;
 
+    blockquote,
+    dl,
+    figure,
+    form,
+    ol,
+    p,
+    pre,
+    table,
+    ul {
+      margin-bottom: 2rem;
+    }
+
     code.hljs {
       background: $base-color;
     }
@@ -62,7 +74,7 @@ article {
     h4,
     h5,
     h6 {
-      margin-top: 1.4rem;
+      margin-top: 3.4rem;
       margin-bottom: 2rem;
     }
 
@@ -192,11 +204,9 @@ article {
 
     blockquote {
       background-color: #f6f6f6;
-      font-family: $headline-font;
       margin: 1.5em 0;
       padding: 1.4em;
       border-left: 0.5em solid #ededed;
-      font-size: 1.1em;
 
       cite {
         text-transform: uppercase;
