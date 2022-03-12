@@ -6,7 +6,7 @@
 
     .container {
       flex-direction: column-reverse;
-      padding: 0 2.2em;
+      padding: 0 2em;
 
       .logo {
         width: 80px;
@@ -46,7 +46,7 @@
     width: 100%;
 
     .container {
-      padding: 0 3em;
+      padding: 0 30px;
       .titles {
         font-size: 0.8em;
         .title {
@@ -56,7 +56,7 @@
     }
 
     .toggler {
-      right: 1.5em;
+      right: 10px;
 
       &.permanentTopNav {
         display: block;
@@ -64,7 +64,7 @@
     }
 
     .languages {
-      right: 1.5em;
+      right: 10px;
     }
   }
 
