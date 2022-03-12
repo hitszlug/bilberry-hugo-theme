@@ -39,13 +39,13 @@ footer {
         position: relative;
         left: 0;
         display: inline-block;
-        transition: left 0.3s ease-in-out;
-        color: $highlight-color;
+        transition: all 0.3s ease-in-out;
+        color: $base-color;
         font-family: $content-font;
 
         &:hover {
-          left: 10px;
-          color: $base-color;
+          left: 0.2em;
+          color: $highlight-color;
         }
       }
     }
@@ -58,7 +58,7 @@ footer {
         a {
           font-size: 2em;
           margin: 0 1rem;
-          color: #444;
+          color: $base-color;
 
           &:hover {
             color: $highlight-color;
@@ -96,7 +96,7 @@ footer {
         margin-bottom: 2em;
         a {
           text-transform: uppercase;
-          color: $highlight-color;
+          color: $base-color;
           letter-spacing: 0.1em;
 
           &.active {
@@ -104,7 +104,7 @@ footer {
           }
 
           &:hover {
-            color: $text-color;
+            color: $highlight-color;
           }
 
           &:not(:last-child):after {

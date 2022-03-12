@@ -146,7 +146,7 @@ article {
 
     a {
       font-style: normal;
-      color: $highlight-color;
+      color: $darklight-color;
 
       &:hover {
         text-decoration: underline dotted;
@@ -156,7 +156,7 @@ article {
     a.more {
       display: block;
       margin: 2.5rem 0 1rem;
-      color: $highlight-color;
+      color: $darklight-color;
       font-size: 1.125em;
       text-decoration: none;
       font-style: normal;
@@ -213,7 +213,7 @@ article {
       background-color: $page-background-color;
       margin: 1.5em 0;
       padding: 1.4em;
-      border-left: 0.5em solid $lowlight-color;
+      border-left: 0.3em solid $lowlight-color;
       transition: all 0.3s ease-in-out;
 
       cite {
@@ -228,7 +228,7 @@ article {
       }
 
       &:hover {
-        border-left: 0.6em solid $lowlight-color;
+        border-left: 0.4em solid $lowlight-color;
       }
     }
 
