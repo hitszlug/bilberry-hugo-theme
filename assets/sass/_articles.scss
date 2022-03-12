@@ -50,10 +50,6 @@ article {
       margin-bottom: 2rem;
     }
 
-    code.hljs {
-      background: $base-color;
-    }
-
     h1 {
       font-size: 1.75em;
       margin-bottom: 0.25em;
@@ -77,6 +73,10 @@ article {
     h6 {
       margin-top: 3.4rem;
       margin-bottom: 2rem;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: translateX(0.1em);
+      }
     }
 
     h2,
@@ -123,7 +123,7 @@ article {
 
         &:hover {
           color: $highlight-color;
-          text-decoration: underline;
+          text-decoration: underline dotted;
         }
       }
 
@@ -149,7 +149,7 @@ article {
       color: $highlight-color;
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: underline dotted;
       }
     }
 
@@ -214,6 +214,7 @@ article {
       margin: 1.5em 0;
       padding: 1.4em;
       border-left: 0.5em solid $lowlight-color;
+      transition: all 0.3s ease-in-out;
 
       cite {
         text-transform: uppercase;
@@ -224,6 +225,10 @@ article {
 
       p:last-child {
         margin-bottom: 0;
+      }
+
+      &:hover {
+        border-left: 0.6em solid $lowlight-color;
       }
     }
 

@@ -40,7 +40,9 @@
       font-size: 0.9em;
       white-space: pre;
       overflow-x: auto;
-      border-radius: 0.8em;
+      border-radius: 0.6em;
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.03) 0px 4px 6px -2px;
     }
 
     .copy-button {
