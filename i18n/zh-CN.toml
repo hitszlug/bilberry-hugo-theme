@@ -19,9 +19,6 @@ other = "来这里找文章"
 [noSearchResults]
 other = "什么都没找到。"
 
-[archive]
-other = "档案室"
-
 [olderPosts]
 other = "更早的文章"
 
@@ -35,5 +32,14 @@ other = "继续阅读"
 other = "其他语言"
 
 [readingTime]
-other = "1 分钟阅读"
+other = "{{.Count}} 分钟阅读时长"
+
+[tableOfContents]
+other = "目录"
+
+[series]
+other = "系列"
+
+[archive]
+other = "档案室"
 
