@@ -1,5 +1,12 @@
 header {
-  background-color: $base-color;
+  background: linear-gradient(
+    -45deg,
+    $base-color,
+    rgb(47, 65, 114),
+    $base-color
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease-in-out infinite;
   color: $header-text-color;
   height: auto;
   display: flex;
@@ -14,6 +21,7 @@ header {
     flex-direction: row;
     align-items: center;
     min-height: 20rem;
+    min-height: 20rem;
 
     &:after {
       content: "";
@@ -26,6 +34,28 @@ header {
       background: rgba(255, 255, 255, 0.1);
       z-index: 1;
     }
+  }
+
+  .background {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(
+      -45deg,
+      #ee775250,
+      #e73c7e50,
+      #23a6d550,
+      #23d5ab50
+    );
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    min-height: 20rem;
   }
 
   .logo {
@@ -135,5 +165,17 @@ header {
     &.permanentTopNav {
       display: none;
     }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
