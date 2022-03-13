@@ -8198,11 +8198,11 @@ img.mfp-img {
   }
 }
 @font-face {
-  font-family: "Swei Gothic CJK SC";
+  font-family: "Gen Sen Rounded";
   font-style: normal;
   font-weight: 500;
   src: local(""),
-    url(./fonts/swei-gothic-cjk-sc-medium.woff2?c8660a4a2f870d3f4d4a25f24d8457f9)
+    url(./fonts/gen-sen-rounded-m.woff2?c8660a4a2f870d3f4d4a25f24d8457f9)
       format("woff2");
   font-display: swap;
 }
@@ -8530,7 +8530,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
 .bilberry-hugo-theme h6,
 .bilberry-hugo-theme .title,
 .bilberry-hugo-theme .subtitle {
-  font-family: "Swei Gothic CJK SC", "Helvetica Neue", Helvetica, "PingFang SC",
+  font-family: "Gen Sen Rounded", "Helvetica Neue", Helvetica, "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-weight: 500;
 }
@@ -9354,7 +9354,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   font-size: 1.1em;
 }
 .bilberry-hugo-theme article.quote blockquote cite {
-  font-family: "Swei Gothic CJK SC", "Helvetica Neue", Helvetica, "PingFang SC",
+  font-family: "Gen Sen Rounded", "Helvetica Neue", Helvetica, "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -9468,7 +9468,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   border-radius: 1.2em;
   padding: 0.8em 1.4em;
   text-decoration: none;
-  font-family: "Swei Gothic CJK SC", "Helvetica Neue", Helvetica, "PingFang SC",
+  font-family: "Gen Sen Rounded", "Helvetica Neue", Helvetica, "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   background-color: #b4b4b4;
   color: #fff;
@@ -9493,7 +9493,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   display: flex;
   justify-content: space-between;
   font-size: 0.9em;
-  font-family: "Swei Gothic CJK SC", "Helvetica Neue", Helvetica, "PingFang SC",
+  font-family: "Gen Sen Rounded", "Helvetica Neue", Helvetica, "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 .bilberry-hugo-theme footer .container div:not(:first-child) {

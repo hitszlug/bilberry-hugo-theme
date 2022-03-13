@@ -2,7 +2,7 @@
 // Notice that the actual content's width is $site-width - 100px
 $site-width: 900px;
 
-$headline-font: "Swei Gothic CJK SC", "Helvetica Neue", Helvetica, "PingFang SC",
+$headline-font: "Gen Sen Rounded", "Helvetica Neue", Helvetica, "PingFang SC",
   "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 $content-font: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
   "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
@@ -33,13 +33,13 @@ $bubble-background-color: #ccc;
 $bubble-hover-color: $highlight-color;
 
 $article-background-color: #fff;
-$meta-text-color: #999;
+$meta-text-color: rgb(133, 133, 133);
 $meta-border-color: #eee;
 $continue-reading-hover-color: $meta-text-color;
 
 $footer-border-color: #eee;
 $footer-background-color: rgba(#ffffff, 80);
-$footer-headline-color: rgb(43, 43, 43);
+$footer-headline-color: $base-color;
 @mixin featuredImage() {
   .featured-image {
     position: absolute;

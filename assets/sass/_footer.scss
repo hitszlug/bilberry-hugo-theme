@@ -27,7 +27,7 @@ footer {
         left: 0;
         display: inline-block;
         transition: all 0.3s ease-in-out;
-        color: $base-color;
+        color: $meta-text-color;
         font-family: $content-font;
 
         &:hover {
@@ -47,7 +47,7 @@ footer {
           a {
             font-size: 2em;
             margin: 0 0.3em;
-            color: $base-color;
+            color: $meta-text-color;
 
             &:hover {
               color: $highlight-color;
@@ -82,7 +82,7 @@ footer {
         margin-bottom: 2em;
         a {
           text-transform: uppercase;
-          color: $base-color;
+          color: $meta-text-color;
           letter-spacing: 0.1em;
 
           &.active {

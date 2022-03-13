@@ -16,6 +16,7 @@
   .subtitle {
     font-family: $headline-font;
     font-weight: 500;
+    letter-spacing: 0.02rem;
   }
 
   a {
@@ -41,24 +42,36 @@
       font-size: 0.9em;
       white-space: pre;
       overflow-x: auto;
-      border-radius: 0.6em;
+      border-radius: 0.5em;
       box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.03) 0px 4px 6px -2px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: translateY(-0.1em);
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 12px 15px -3px,
+          rgba(0, 0, 0, 0.03) 0px 6px 6px -2px;
+      }
     }
 
     .copy-button {
       display: none;
       position: absolute;
-      top: 5px;
-      right: 5px;
-      background: #f1f1f1;
-      padding: 4px;
-      font-size: 12pt;
+      top: 1em;
+      right: 1em;
+      background: #ffffff;
+      color: $meta-text-color;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      border: none;
+      border-radius: 0.5em;
+      padding: 0.5em;
+      font-size: 0.8em;
       line-height: normal;
       height: auto;
+      transition: all 0.3s ease-in-out;
     }
 
     &:hover .copy-button {
+      color: $meta-text-color;
       display: block;
     }
   }

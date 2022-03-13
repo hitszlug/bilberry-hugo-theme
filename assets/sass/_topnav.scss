@@ -33,6 +33,9 @@ nav {
     }
   }
 
+  input {
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -107,7 +110,9 @@ nav {
 
       .aa-dropdown-menu {
         width: 100%;
-        border-radius: 4px;
+        overflow: hidden;
+        border-radius: 1em;
+        padding: 0.5em;
 
         .empty {
           padding: 0.5em 1em;
