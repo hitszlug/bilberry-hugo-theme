@@ -19,11 +19,14 @@ other = "来这里找文章"
 [noSearchResults]
 other = "什么都没找到。"
 
+[archive]
+other = "档案室"
+
 [olderPosts]
-other = "以前的帖子"
+other = "更早的文章"
 
 [newerPosts]
-other = "较新的帖子"
+other = "更新的文章"
 
 [continueReading]
 other = "继续阅读"
