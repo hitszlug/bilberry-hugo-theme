@@ -1,5 +1,7 @@
 # How to contribute
 
+**DO NOT use any code formatting tool!!**
+
 **Remember to sync with remote repository every time before and after devlopment!**
 
 **Make your design decisions with great care, follow KISS principles, and _if it ain't broke, don't fix it_.**
