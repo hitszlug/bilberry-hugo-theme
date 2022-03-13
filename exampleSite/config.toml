@@ -1,4 +1,4 @@
-title = "My cool new Blog"
+title = "LUG Weekly"
 baseURL = "https://example.com/"
 theme = "bilberry-hugo-theme"
 themesdir = "../../"

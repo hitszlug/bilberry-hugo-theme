@@ -20,7 +20,7 @@ header {
       display: block;
       position: absolute;
       left: 50px;
-      top: 50px;
+      top: 60px;
       width: 2px;
       height: 100%;
       background: rgba(255, 255, 255, 0.1);
@@ -32,15 +32,20 @@ header {
     font-size: 40pt !important;
     background-color: $logo-color;
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    border: 5px $logo-color solid;
+    left: 0.6rem;
+    width: 8rem;
+    height: 8rem;
+    border: 0.4rem $logo-color solid;
     position: relative;
     color: $logo-color;
     z-index: 4;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .logo {
+      left: 0;
+    }
 
     a {
       border: 0;
