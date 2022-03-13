@@ -1,9 +1,9 @@
 header {
   background: linear-gradient(
     -45deg,
-    $base-color,
-    rgb(47, 65, 114),
-    $base-color
+    darken($base-color, 7),
+    rgb(40, 53, 88),
+    darken($base-color, 7)
   );
   background-size: 400% 400%;
   animation: gradient 30s ease-in-out infinite;
