@@ -32,7 +32,7 @@
 In Weekly project, do -
 
 1. `git submodule update --remote --merge`
-2. `git commit -am "update submodule`
+2. `git commit -am "update submodule"`
 3. `git push`
 
 ## Tricks
