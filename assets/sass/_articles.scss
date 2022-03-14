@@ -147,6 +147,7 @@ article {
     a {
       font-style: normal;
       color: $darklight-color;
+      overflow-wrap: anywhere;
 
       &:hover {
         text-decoration: underline dotted;

@@ -81,6 +81,9 @@
 
   .main {
     margin-bottom: 0;
+    .article-wrapper {
+      padding-top: 0;
+    }
   }
 
   .main article {
@@ -98,8 +101,7 @@
   }
 
   .main .paginator {
-    margin: 1.5em;
-    margin-top: 50px;
+    margin: 2em 14px 2em 14px;
   }
 
   footer .container {
