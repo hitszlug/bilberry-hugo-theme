@@ -1,28 +1,29 @@
 // dependencies
-require("jquery");
-require("flexslider");
-require("algoliasearch/dist/algoliasearch.jquery");
-require("autocomplete.js/dist/autocomplete.jquery");
-require("tooltipster");
-require("magnific-popup");
+import "jquery";
+import "flexslider";
+import "algoliasearch/dist/algoliasearch.jquery";
+import "autocomplete.js/dist/autocomplete.jquery";
+import "tooltipster";
+import "magnific-popup";
 
-let ClipboardJs = require("clipboard");
-let hljs = require("highlight.js");
-let moment = require("moment");
-require("moment/min/locales.min");
+import ClipboardJs from "clipboard";
+import { highlightAll } from "highlight.js";
+import { moment, locale } from "moment";
+
+console.info("🇺🇦 Stand with people of Ukraine!");
 
 // Add ClipboardJs to enable copy button functionality
 new ClipboardJs(".copy-button", {
-  target: function (trigger) {
+  target: (trigger) => {
     return trigger.previousElementSibling;
   },
-}).on("success", function (e) {
+}).on("success", (e) => {
   e.clearSelection();
 });
 
-$(document).ready(function () {
+$(() =>{
   // Add copy button and tooltip to each code-block
-  $("pre").each(function () {
+  $("pre").each(() => {
     $(this).append(
       '<button class="copy-button tooltip" title="复制成功！"><i class="far fa-fw fa-copy"></i></button>'
     );
@@ -47,58 +48,58 @@ $(document).ready(function () {
   });
 
   // Nav-Toggle
-  $(".toggler").click(function () {
+  $(".toggler").on("click", () => {
     $("nav").slideToggle();
     $("#search").autocomplete("val", "");
   });
 
-  // Commento support to block search focus when hitting the S key
-  blockSearchFocusCommento = false;
+  // // Commento support to block search focus when hitting the S key
+  // blockSearchFocusCommento = false;
 
-  $("#commento").focusin(function () {
-    blockSearchFocusCommento = true;
-  });
+  // $("#commento").focusin(() => {
+  //   blockSearchFocusCommento = true;
+  // });
 
-  $("#commento").focusout(function () {
-    blockSearchFocusCommento = false;
-  });
+  // $("#commento").focusout(() => {
+  //   blockSearchFocusCommento = false;
+  // });
 
-  // Utterances support to block search focus when hitting the S key
-  blockSearchFocusUtterances = false;
+  // // Utterances support to block search focus when hitting the S key
+  // blockSearchFocusUtterances = false;
 
-  $("#utterances").focusin(function () {
-    blockSearchFocusUtterances = true;
-  });
+  // $("#utterances").focusin(() => {
+  //   blockSearchFocusUtterances = true;
+  // });
 
-  $("#utterances").focusout(function () {
-    blockSearchFocusUtterances = false;
-  });
+  // $("#utterances").focusout(() => {
+  //   blockSearchFocusUtterances = false;
+  // });
 
-  // Giscus support to block search focus when hitting the S key
-  blockSearchFocusGiscus = false;
+  // // Giscus support to block search focus when hitting the S key
+  // blockSearchFocusGiscus = false;
 
-  $("#giscus").focusin(function () {
-    blockSearchFocusGiscus = true;
-  });
+  // $("#giscus").focusin(() => {
+  //   blockSearchFocusGiscus = true;
+  // });
 
-  $("#giscus").focusout(function () {
-    blockSearchFocusGiscus = false;
-  });
+  // $("#giscus").focusout(() => {
+  //   blockSearchFocusGiscus = false;
+  // });
 
-  // Keyboard-Support
-  $(document).keyup(function (e) {
-    if (e.keyCode === 27) {
-      if (!$("nav").hasClass("permanentTopNav")) $("nav").slideUp();
-      $("#search").autocomplete("val", "");
-    } else if (
-      (e.keyCode === 83 && !blockSearchFocusCommento) ||
-      !blockSearchFocusUtterances ||
-      !blockSearchFocusGiscus
-    ) {
-      if (!$("nav").hasClass("permanentTopNav")) $("nav").slideDown();
-      $("#search").focus();
-    }
-  });
+  // Keyboard-Support (Deprecated)
+  // $(document).keyup((e) => {
+  //   if (e.keyCode === 27) => {
+  //     if (!$("nav").hasClass("permanentTopNav")) $("nav").slideUp();
+  //     $("#search").autocomplete("val", "");
+  //   } else if (
+  //     (e.keyCode === 83 && !blockSearchFocusCommento) ||
+  //     !blockSearchFocusUtterances ||
+  //     !blockSearchFocusGiscus
+  //   ) => {
+  //     if (!$("nav").hasClass("permanentTopNav")) $("nav").slideDown();
+  //     $("#search").focus();
+  //   }
+  // });
 
   // Flexslider
   $(".flexslider").flexslider({
@@ -121,8 +122,8 @@ $(document).ready(function () {
     },
     callbacks: {
       // Get the src directly from the img-tag instead of an additional tag
-      elementParse: function (item) {
-        // Function will fire for each target element
+      elementParse: (item) => {
+        // will fire for each target element
         // "item.el" is a target DOM element (if present)
         // "item.src" is a source that you may modify
 
@@ -131,7 +132,7 @@ $(document).ready(function () {
     },
     // https://github.com/dimsemenov/Magnific-Popup/pull/1017
     // Enabled popup only when image size is greater than content area
-    disableOn: function (e) {
+    disableOn: (e) => {
       let img = e.target;
       return img.naturalWidth > img.clientWidth;
     },
@@ -143,7 +144,7 @@ $(document).ready(function () {
     type: "image",
     image: {
       verticalFit: true,
-      titleSrc: function (item) {
+      titleSrc: (item) => {
         return item.el.parent().find("figcaption").text();
       },
     },
@@ -151,13 +152,13 @@ $(document).ready(function () {
       enabled: true,
     },
     callbacks: {
-      elementParse: function (item) {
+      elementParse: (item) => {
         item.src = item.el.attr("src");
       },
     },
     // https://github.com/dimsemenov/Magnific-Popup/pull/1017
     // Enabled popup only when image size is greater than content area
-    disableOn: function (e) {
+    disableOn: (e) => {
       let img = e.target;
       return img.naturalWidth > img.clientWidth;
     },
@@ -169,7 +170,7 @@ $(document).ready(function () {
     type: "image",
     delegate: "a",
     image: {
-      titleSrc: function (item) {
+      titleSrc: (item) => {
         return item.el.parent().find("figcaption").text();
       },
       verticalFit: true,
@@ -201,11 +202,11 @@ $(document).ready(function () {
       .autocomplete({ hint: false, autoselect: true, debug: false }, [
         {
           source: autocompleteSource,
-          displayKey: function (suggestion) {
+          displayKey: (suggestion) => {
             return suggestion.title || suggestion.author;
           },
           templates: {
-            suggestion: function (suggestion) {
+            suggestion: (suggestion) => {
               return (
                 "<span class='entry " +
                 suggestion.type +
@@ -219,14 +220,14 @@ $(document).ready(function () {
                 "</span>"
               );
             },
-            empty: function () {
+            empty: () => {
               return (
                 "<span class='empty'>" +
                 $("#algolia-search-noSearchResults").val() +
                 "</span>"
               );
             },
-            footer: function () {
+            footer: () => {
               return (
                 '<div class="branding">Powered by <img src="' +
                 $("meta[name=siteBaseUrl]").attr("content") +
@@ -236,10 +237,10 @@ $(document).ready(function () {
           },
         },
       ])
-      .on("autocomplete:selected", function (event, suggestion, dataset) {
+      .on("autocomplete:selected", (event, suggestion, dataset) => {
         window.location = suggestion.url;
       })
-      .keypress(function (event, suggestion) {
+      .keypress((event, suggestion) => {
         if (event.which == 13) {
           window.location = suggestion.url;
         }
@@ -247,12 +248,12 @@ $(document).ready(function () {
   }
 
   // MomentJS
-  language = $("html").attr("lang");
-  moment.locale(language);
-  $(".moment").each(function () {
+  let language = $("html").attr("lang");
+  locale(language);
+  $(".moment").each(() => {
     date = $(this).text();
     $(this).text(moment(date).format("LL"));
   });
 });
 
-hljs.initHighlightingOnLoad();
+highlightAll();
