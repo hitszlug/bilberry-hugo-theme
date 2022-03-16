@@ -11,7 +11,7 @@ import { highlightAll } from "highlight.js";
 import moment, {locale } from "moment";
 
 console.info("🇨🇳 让您的爱心帮助更多有需要的中国人！\n了解更多: https://onefoundation.cn/donate/project-relief");
-console.info("🇺🇦 Stand with people of Ukraine!\nLearn more (Chinese): https://www.icrc.org/zh/where-we-work/europe-central-asia/ukraine");
+console.info("🇺🇦 Help Ukrainians at war!\nLearn more (Chinese): https://www.icrc.org/zh/where-we-work/europe-central-asia/ukraine");
 console.info("🇺🇬 Help children in Uganda!\nLearn more: https://iccf-holland.org/donate.html");
 
 // Add ClipboardJs to enable copy button functionality
