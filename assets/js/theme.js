@@ -5,17 +5,16 @@ import "algoliasearch/dist/algoliasearch.jquery";
 import "autocomplete.js/dist/autocomplete.jquery";
 import "tooltipster";
 import "magnific-popup";
-
-import ClipboardJs from "clipboard";
+import ClipboardJS from "clipboard";
 import { highlightAll } from "highlight.js";
-import moment, {locale } from "moment";
+import moment, { locale } from "moment";
 
 console.info("🇨🇳 让您的爱心帮助更多有需要的中国人！\n了解更多: https://onefoundation.cn/donate/project-relief");
 console.info("🇺🇦 Help Ukrainians at war!\nLearn more (Chinese): https://www.icrc.org/zh/where-we-work/europe-central-asia/ukraine");
 console.info("🇺🇬 Help children in Uganda!\nLearn more: https://iccf-holland.org/donate.html");
 
 // Add ClipboardJs to enable copy button functionality
-new ClipboardJs(".copy-button", {
+new ClipboardJS(".copy-button", {
   target: (trigger) => {
     return trigger.previousElementSibling;
   },
@@ -160,11 +159,9 @@ $(() => {
   });
   
   // Add copy button and tooltip to each code-block
-  $("pre").each(() => {
-    $(this).append(
-      '<button class="copy-button tooltip" title="复制成功！"><i class="far fa-fw fa-copy"></i></button>'
-    );
-  });
+  $("pre").append(
+    '<button class="copy-button tooltip" title="复制成功"><i class="far fa-fw fa-copy"></i></button>'
+  );
 
   $(".tooltip").tooltipster({
     animationDuration: 1,
