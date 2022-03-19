@@ -362,13 +362,6 @@ $(() => {
                 "</span>"
               );
             },
-            footer: () => {
-              return (
-                '<div class="branding">Powered by <img src="' +
-                $("meta[name=siteBaseUrl]").attr("content") +
-                '/algolia-logo-light.svg" alt="algolia" /></div>'
-              );
-            },
           },
         },
       ])
