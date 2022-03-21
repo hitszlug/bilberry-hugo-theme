@@ -16,6 +16,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Wawei";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../../static/fonts/wawei-sc-medium.woff2") format("woff2");
+  font-display: swap;
+}
+
 /* comfortaa-regular - greek_latin-ext_vietnamese_cyrillic-ext */
 // @font-face {
 //   font-family: "Comfortaa";
