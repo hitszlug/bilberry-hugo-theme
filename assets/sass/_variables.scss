@@ -9,10 +9,12 @@ $content-font: "Helvetica Neue", Helvetica, "PingFang SC", "Wawei", "Hiragino Sa
 $article-footer-font: "Fira Code", "Helvetica Neue", Helvetica, "PingFang SC", "Wawei", 
   "Hiragino Sans GB", "Microsoft YaHei", Arial, "Noto Sans", "微软雅黑", monospace;
 
+$hard-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
 // main colors
 $page-background-color: rgb(252, 252, 252);
-$base-color: rgb(35, 33, 76);
-$special-color: rgb(26, 24, 42);
+$base-color: rgb(38, 45, 108);
+$special-color: darken($base-color, 10);
 $highlight-color: rgb(172, 193, 69);
 $darklight-color: rgb(140, 118, 37);
 $lowlight-color: rgb(200, 232, 169);
@@ -29,7 +31,7 @@ $algolia-border-color: #e4e4e4;
 $header-text-color: $page-background-color;
 $logo-color: darken($page-background-color, 1);
 $bubble-color: #fff;
-$bubble-background-color: rgb(170, 132, 184);
+$bubble-background-color: rgb(203, 203, 203);
 $bubble-hover-color: $highlight-color;
 
 $article-background-color: #fff;

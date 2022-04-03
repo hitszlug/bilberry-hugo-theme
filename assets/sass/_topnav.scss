@@ -91,6 +91,8 @@ nav {
         width: 100%;
         overflow: hidden;
         border-radius: 0.8em;
+        border: none;
+        box-shadow: $hard-box-shadow;
         padding: 0.5em;
 
         .empty {
@@ -118,14 +120,17 @@ nav {
           justify-content: space-between;
           align-items: center;
           background-color: $algolia-search-box-background-color;
+          transition: all 0.25s ease-in-out;
+          padding: 0.2em 0.1em;
 
           &:hover,
           &:focus {
-            background-color: darken($algolia-search-box-background-color, 2);
+            color: $highlight-color
           }
 
           .title {
             max-width: 315px;
+            padding-right: 0.2em;
           }
 
           &.entry.category,
