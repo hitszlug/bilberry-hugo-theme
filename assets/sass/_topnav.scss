@@ -71,7 +71,7 @@ nav {
       background-color: $nav-background-color;
       font-family: $content-font;
       transition: all 0.25s ease-in-out;
-      lighten($nav-background-color, 10)
+      lighten($nav-background-color, 10);
 
       &:hover,
       &:focus {
