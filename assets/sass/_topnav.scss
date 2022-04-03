@@ -63,25 +63,24 @@ nav {
 
     input {
       margin: 0;
-      background: transparent;
       border: none;
       color: $nav-text-color;
       padding-left: 2.75em;
       width: 100%;
-      background-color: $nav-background-color;
       font-family: $content-font;
       transition: all 0.25s ease-in-out;
-      background-color: lighten($nav-background-color, 10);
+      background-color: lighten($nav-background-color, 5);
+      border-radius: 999999px;
 
       &:hover,
       &:focus {
-        background-color: lighten($nav-background-color, 20);
         border: none;
+        background-color: lighten($nav-background-color, 10);
       }
     }
 
     ::placeholder {
-      color: $meta-text-color;
+      color: rgba(255, 255, 255, 0.6);
     }
 
     .algolia-autocomplete {
