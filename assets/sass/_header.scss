@@ -2,7 +2,7 @@ header {
   background: linear-gradient(
     -45deg,
     darken($base-color, 7),
-    rgb(40, 53, 88),
+    $base-color,
     darken($base-color, 7)
   );
   background-size: 400% 400%;
@@ -103,8 +103,18 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.25s ease-in-out;
       opacity: 0;
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      ::before {
+        font-size: 0.9em;
+      }
     }
   }
 
@@ -137,7 +147,7 @@ header {
     a {
       text-transform: uppercase;
       font-size: 0.8em;
-      color: $page-background-color;
+      color: $header-text-color;
       letter-spacing: 0.1em;
 
       &.active {

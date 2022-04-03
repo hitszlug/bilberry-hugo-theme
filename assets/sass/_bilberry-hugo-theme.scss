@@ -26,7 +26,7 @@
   a {
     color: inherit;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
 
     &:hover {
       color: $highlight-color;
@@ -49,7 +49,7 @@
       border-radius: 0.5em;
       box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.03) 0px 4px 6px -2px;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.25s ease-in-out;
       &:hover {
         transform: translateY(-0.1em);
         box-shadow: rgba(0, 0, 0, 0.08) 0px 12px 15px -3px,
@@ -71,7 +71,7 @@
       font-size: 0.8em;
       line-height: normal;
       height: auto;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.25s ease-in-out;
     }
 
     &:hover .copy-button {

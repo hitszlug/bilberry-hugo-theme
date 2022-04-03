@@ -26,7 +26,7 @@ footer {
         position: relative;
         left: 0;
         display: inline-block;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.25s ease-in-out;
         color: $meta-text-color;
         font-family: $content-font;
 
@@ -119,7 +119,7 @@ footer {
     justify-content: space-between;
     padding: 4rem 0;
     font-size: 0.8em;
-    color: #777;
+    color: $meta-text-color;
 
     &:after {
       display: none;

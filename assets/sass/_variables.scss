@@ -10,13 +10,13 @@ $article-footer-font: "Fira Code", "Helvetica Neue", Helvetica, "PingFang SC", "
   "Hiragino Sans GB", "Microsoft YaHei", Arial, "Noto Sans", "微软雅黑", monospace;
 
 // main colors
-$page-background-color: #fafafa;
-$base-color: rgb(30, 58, 80);
-$special-color: #012736;
-$highlight-color: #68bb41;
-$darklight-color: #589745;
-$lowlight-color: #b5ebae;
-$text-color: #222;
+$page-background-color: rgb(252, 252, 252);
+$base-color: rgb(35, 33, 76);
+$special-color: rgb(26, 24, 42);
+$highlight-color: rgb(172, 193, 69);
+$darklight-color: rgb(140, 118, 37);
+$lowlight-color: rgb(200, 232, 169);
+$text-color: rgb(21, 21, 21);
 
 // easy styling
 $nav-background-color: $special-color;
@@ -29,17 +29,17 @@ $algolia-border-color: #e4e4e4;
 $header-text-color: $page-background-color;
 $logo-color: darken($page-background-color, 1);
 $bubble-color: #fff;
-$bubble-background-color: #ccc;
+$bubble-background-color: rgb(170, 132, 184);
 $bubble-hover-color: $highlight-color;
 
 $article-background-color: #fff;
-$meta-text-color: rgb(133, 133, 133);
+$meta-text-color: rgb(126, 126, 126);
 $meta-border-color: #eee;
 $continue-reading-hover-color: $meta-text-color;
 
 $footer-border-color: #eee;
 $footer-background-color: rgba(#ffffff, 80);
-$footer-headline-color: $base-color;
+$footer-headline-color: $text-color;
 @mixin featuredImage() {
   .featured-image {
     position: absolute;

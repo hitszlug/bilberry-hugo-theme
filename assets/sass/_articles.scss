@@ -73,7 +73,7 @@ article {
     h6 {
       margin-top: 3.6rem;
       margin-bottom: 1.2rem;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.25s ease-in-out;
       &:hover {
         transform: translateX(0.1em);
       }
@@ -203,7 +203,7 @@ article {
       margin: 1.5em 0;
       padding: 1.4em;
       border-left: 0.3em solid $lowlight-color;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.25s ease-in-out;
 
       cite {
         text-transform: uppercase;
@@ -460,11 +460,11 @@ article {
 
     &:hover {
       background-color: $highlight-color;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.25s ease-in-out;
 
       &:after {
         border-right-color: $highlight-color;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.25s ease-in-out;
       }
     }
 

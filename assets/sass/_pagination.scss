@@ -5,16 +5,16 @@
   padding-bottom: 1em;
 
   a {
-    border-radius: 1em;
+    border-radius: 999px;
     padding: 0.8em 1.4em;
     text-decoration: none;
     font-family: $headline-font;
-    background-color: #b4b4b4;
+    background-color: $bubble-background-color;
     color: #fff;
 
     &:hover {
       background-color: $highlight-color;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.25s ease-in-out;
     }
 
     &.older {
