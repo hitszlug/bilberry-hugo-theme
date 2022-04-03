@@ -5,7 +5,7 @@ header {
     $base-color,
     darken($base-color, 7)
   );
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: gradient 30s ease-in-out infinite;
   color: $header-text-color;
   height: auto;
