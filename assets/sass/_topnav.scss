@@ -119,14 +119,12 @@ nav {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          background-color: $algolia-search-box-background-color;
           transition: all 0.25s ease-in-out;
           padding: 0.2em 0.1em;
 
           &:hover,
           &:focus {
             color: $highlight-color;
-            background: transparent;
           }
 
           .title {
