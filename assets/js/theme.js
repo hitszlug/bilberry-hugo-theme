@@ -1,12 +1,12 @@
 // dependencies
 import "jquery";
 import "flexslider";
-import "algoliasearch/dist/algoliasearch.jquery";
-import "autocomplete.js/dist/autocomplete.jquery";
+import "algoliasearch";
+import "autocomplete.js";
 import "tooltipster";
 import "magnific-popup";
 import ClipboardJS from "clipboard";
-import { highlightAll } from "highlight.js";
+import * as HighLightJS from "highlight.js";
 import moment, { locale } from "moment";
 
 console.info("🇨🇳 让您的爱心帮助更多有需要的中国人！\n了解更多: https://onefoundation.cn/donate/project-relief");
@@ -384,4 +384,4 @@ $(() => {
   });
 });
 
-highlightAll();
+HighLightJS();
