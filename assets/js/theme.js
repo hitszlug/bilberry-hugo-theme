@@ -1,12 +1,11 @@
 // dependencies
 import "jquery";
 import "flexslider";
-import "algoliasearch";
 import "autocomplete.js";
 import "tooltipster";
 import "magnific-popup";
+import hljs from "highlight.js/lib/core";
 import ClipboardJS from "clipboard";
-import * as HighLightJS from "highlight.js";
 import moment, { locale } from "moment";
 
 console.info("🇨🇳 让您的爱心帮助更多有需要的中国人！\n了解更多: https://onefoundation.cn/donate/project-relief");
@@ -317,6 +316,7 @@ $(() => {
 
   // Algolia-Search
   if ($("#activate-algolia-search").length) {
+    const algoliasearch = require("algoliasearch");
     let client = algoliasearch(
       $("#algolia-search-appId").val(),
       $("#algolia-search-apiKey").val()
@@ -384,4 +384,4 @@ $(() => {
   });
 });
 
-HighLightJS();
+hljs.highlightAll();
