@@ -4,7 +4,7 @@ import "flexslider";
 import "autocomplete.js";
 import "tooltipster";
 import "magnific-popup";
-import hljs from "highlight.js/lib/core";
+import hljs from "highlight.js";
 import ClipboardJS from "clipboard";
 import moment, { locale } from "moment";
 

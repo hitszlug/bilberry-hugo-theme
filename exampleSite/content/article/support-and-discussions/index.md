@@ -9,6 +9,13 @@ noSummary: true
 
 ## h2 赢麻了
 
+```c
+#include <stdio.h>
+int main() {
+  return 0;
+}
+```
+
 ### h3 赢麻了
 
 #### h4 赢麻了
