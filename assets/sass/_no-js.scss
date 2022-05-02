@@ -24,12 +24,12 @@
   }
 
   nav {
-    display: block !important;
+    display: block;
   }
 
   .search,
   .toggler {
-    display: none !important;
+    display: none;
   }
 
   pre code {
@@ -41,8 +41,8 @@
     &.youtube,
     &.vimeo,
     &.peertube {
-      height: auto !important;
-      padding: 0 !important;
+      height: auto;
+      padding: 0;
     }
   }
 }
