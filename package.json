@@ -3,6 +3,7 @@
   "version": "114.514.1919810",
   "description": " ",
   "dependencies": {
+    "@algolia/autocomplete-js": "^1.6.2",
     "clipboard": "^2.0.6",
     "laravel-mix": "^6.0.43",
     "magnific-popup": "github:Lednerb/Magnific-Popup",

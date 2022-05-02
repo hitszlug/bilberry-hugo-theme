@@ -132,9 +132,9 @@
     {{ end }}
     {{ end }}
 
-    {{ if and (isset .Site.Params "algolia_search") (eq .Site.Params.algolia_search true) }}
+    {{/*  {{ if and (isset .Site.Params "algolia_search") (eq .Site.Params.algolia_search true) }}
     {{ partial "algolia-search.html" . }}
-    {{ end }}
+    {{ end }}  */}}
 </body>
 
 </html>
