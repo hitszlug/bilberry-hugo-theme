@@ -182,7 +182,7 @@ $(() => {
   // Nav-Toggle
   $(".toggler").on("click", () => {
     $("nav").slideToggle({ easing: "easeInOutQuad" });
-    $("#search").autocomplete("val", "");
+    // $("#search").autocomplete("val", "");
   });
 
   // // Commento support to block search focus when hitting the S key
