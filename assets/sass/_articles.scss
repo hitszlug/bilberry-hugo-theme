@@ -144,7 +144,7 @@ article {
       }
     }
 
-    p, blockquote {
+    p, li, blockquote {
       a {
         &:before {
           content: "⤤";
