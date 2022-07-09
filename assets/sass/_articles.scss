@@ -144,6 +144,15 @@ article {
       }
     }
 
+    p {
+      a {
+        &:before {
+          content: "⤤";
+          padding-right: 0.3rem;
+        }
+      }
+    }
+
     a {
       font-style: normal;
       color: $darklight-color;
