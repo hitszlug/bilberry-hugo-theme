@@ -19,14 +19,14 @@
 
         {{ if and .Site.Taxonomies.categories (gt ( .Site.Params.amountCategoriesInFooter | default 7 ) 0 ) }}
         <div class="categories">
-            <a href="{{ " /categories/" | relLangURL }}">
+            <a href="{{ "/categories/" | relLangURL }}">
                 <div class="title">{{ i18n "categories" }}</div>
             </a>
             <ul>
                 {{ range $order, $taxonomy := (first ( .Site.Params.amountCategoriesInFooter | default 7 )
                 .Site.Taxonomies.categories.ByCount) }}
                 <li>
-                    <a href="{{ (print " /categories/" ($taxonomy.Name | urlize)) | relLangURL }}">{{ $taxonomy.Name |
+                    <a href="{{ (print "/categories/" ($taxonomy.Name | urlize)) | relLangURL }}">{{ $taxonomy.Name |
                         humanize }}
                         ({{ $taxonomy.Count }})</a>
                 </li>
