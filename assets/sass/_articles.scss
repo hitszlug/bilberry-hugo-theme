@@ -363,10 +363,10 @@ article {
 
   // Quotes
   &.quote {
-    background-color: $special-color;
+    background-color: $page-background-color;
 
     &:after {
-      border-right-color: $special-color;
+      border-right-color: $page-background-color;
     }
 
     a:hover {
@@ -380,7 +380,6 @@ article {
       padding: 5.5%;
       margin: 0;
       text-align: center;
-      color: #fff;
       background: none;
       font-size: 1.2em;
       position: relative;
